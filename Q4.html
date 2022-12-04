@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q4</title>
+  </head>
+  <body>
+    <canvas id="mychart1" style="display:inline-block;max-height:300px;max-width: 300px"></canvas>
+    
+    <canvas id="mychart2" style=" display:inline-block;max-height:300px;max-width: 300px"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      let mychart1 = document.getElementById("mychart1");
+      new Chart(mychart1, {
+        type: "bar",
+        data: {
+          labels: ["Day1", "Day2", "Day3", "Day4", "Day5", "Day6", "Day7"],
+          datasets: [
+            {
+              label: "# Temperatue",
+              data: [29, 30, 31, 26, 28, 32, 28],
+              borderWidth: 1,
+              backgroundColor: [
+                "orange",
+                "orange",
+                "orange",
+                "orange",
+                "orange",
+                "orange",
+                "orange",
+              ],
+            },
+          ],
+        },
+        options: {
+          plugins:{
+            title:{
+              display:true,
+              text: 'Temperature in Last 7 Days'
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      let mychart2 = document.getElementById("mychart2");
+
+      new Chart(mychart2, {
+        type: "pie",
+        data: {
+          labels: ["Day1", "Day2", "Day3", "Day4", "Day5", "Day6", "Day7"],
+          datasets: [
+            {
+              label: "# RainFall in mm",
+              data: [5, 2, 8, 3, 0, 8, 1],
+              borderWidth: 1,
+              backgroundColor: [
+                "blue",
+                "lightblue",
+                "blue",
+                "lightblue",
+                "lightblue",
+                "blue",
+                "lightblue",
+              ],
+            },
+          ],
+        },
+        options: {
+          plugins:{
+            title:{
+              display:true,
+              text: 'RainFall in Last 7 Days'
+            }
+          }
+        },
+      });
+    </script>
+  </body>
+</html>

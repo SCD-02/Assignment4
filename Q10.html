@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q10</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <div class="container">
+      <h1 class="display-1 text-center"><strong>Checkout Form</strong></h1>
+      <p class="lead text-center">
+        Bellow is an example from built entirely with Bootstrap's form controls.
+        Each required form group has a validation state that can be triggered by
+        atttempting to submit the form without completing it.
+      </p>
+      <div class="container">
+        <div class="row text-start justify-content-md-center">
+          <div class="col-7">
+            <h2 class="text-start">Billing Address</h2>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="validationCustom01" class="form-label"
+                  >First name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom02" class="form-label"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustomUsername" class="form-label"
+                  >Username</label
+                >
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please choose a username.</div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustomEmail" class="form-label"
+                  >Email (Optional)</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomEmail"
+                    aria-describedby="inputGroupPrepend"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustomAddress" class="form-label"
+                  >Address</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomAddress"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">Please Enter your Address.</div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustomAddress2" class="form-label"
+                  >Address 2 (Optional)</label
+                >
+                <div class="input-group has-validation">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomAddress2"
+                    aria-describedby="inputGroupPrepend"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid city.</div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback">Please select a valid state.</div>
+              </div>
+              <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom05"
+                  required
+                />
+                <div class="invalid-feedback">Please provide a valid zip.</div>
+              </div>
+              <hr />
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    checked
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    Shipping address is same as my billing address
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck1"
+                  />
+                  <label class="form-check-label" for="invalidCheck1">
+                    Save this information for next time
+                  </label>
+                </div>
+              </div>
+              <hr />
+              <div class="col-12">
+                <h2>Payment</h2>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="validationFormCheck1"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck1"
+                    >Credit Card</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="validationFormCheck2"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck2"
+                    >Debit Card</label
+                  >
+                </div>
+                <div class="form-check mb-3">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="validationFormCheck3"
+                    name="radio-stacked"
+                    required
+                  />
+                  <label class="form-check-label" for="validationFormCheck3"
+                    >PayPal</label
+                  >
+                  <div class="invalid-feedback">
+                    Please select any Payment Option
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomCardName" class="form-label"
+                  >Name on card</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustomCardName"
+                  required
+                />
+                <p class="fw-lighter">Full name as displayed on card</p>
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomCardNum" class="form-label"
+                  >Card number</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationCustomCardNum"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomCardName" class="form-label"
+                  >Expiration</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationCustomCardName"
+                  max="18"
+                  min="18"
+                  required
+                />
+
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustomCardNum" class="form-label"
+                  >CVV</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="validationCustomCardNum"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+              </div>
+              <hr />
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">
+                  Continue to checkout
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-5">
+            <div class="row my-1">
+              <div class="col-10">
+                <h3 class="display-6">Your Cart</h3>
+              </div>
+              <div class="col-2 py-2">
+                <span class=" badge rounded-pill text-bg-secondary"
+                  >3</span
+                >
+              </div>
+            </div>
+            <div class="container text-start">
+              <div class="row justify-content-center align-itmes-center">
+                <div class="col-12 border bg-white">
+                  <div class="row">
+                    <div class="col-10">
+                      <h6>Product name</h6>
+                      <p class="fw-lighter">Brief description</p>
+                    </div>
+                    <div class="col-2">$20</div>
+                  </div>
+                </div>
+                <div class="col-12 border bg-white">
+                  <div class="row">
+                    <div class="col-10">
+                      <h6>Second Product</h6>
+                      <p class="fw-lighter">Brief description</p>
+                    </div>
+                    <div class="col-2">$30</div>
+                  </div>
+                </div>
+                <div class="col-12 border bg-white">
+                  <div class="row">
+                    <div class="col-10">
+                      <h6>Third Product</h6>
+                      <p class="fw-lighter">Brief description</p>
+                    </div>
+                    <div class="col-2">$10</div>
+                  </div>
+                </div>
+                <div class="col-12 border bg-white text-success">
+                  <div class="row">
+                    <div class="col-10">
+                      <h6>Promo Code</h6>
+                      <p class="fw-lighter">ExampleCode</p>
+                    </div>
+                    <div class="col-2">-$5</div>
+                  </div>
+                </div>
+                <div class="col-12 border bg-white">
+                  <div class="row">
+                    <div class="col-10">
+                      <h6 class="strong">Total (USD)</h6>
+                    </div>
+                    <div class="col-2">-$55</div>
+                  </div>
+                </div>
+                <hr />
+                <div class="col-12 border bg-white">
+                  <div class="row text-center">
+                    <div class="input-group my-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Promo code"
+                        aria-label="Recipient's username"
+                        aria-describedby="button-addon2"
+                      />
+                      <button
+                        class="btn text-light bg-secondary"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        Redeem
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
